@@ -1,0 +1,26 @@
+{
+  "name": "widevine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "index.ts",
+    "internal",
+    "go.mod",
+    "build.mjs"
+  ],
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
